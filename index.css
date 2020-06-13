@@ -1,0 +1,90 @@
+/* flexboxまとめ */
+
+/* 水平方向 */
+.flexbox1 {
+  /* flexbox宣言 */
+  display: flex;
+  /* 左寄せ（デフォルト） */
+  justify-content: flex-start;
+  /* 右寄せ */
+  justify-content: flex-end;
+  /* 中央寄せ */
+  justify-content: center;
+  /* 要素の周りに間隔を空ける */
+  justify-content: space-around;
+  /* 等間隔 */
+  justify-content: space-between;
+}
+
+/* 垂直方向 */
+.flexbox2 {
+  display: flex;
+  /* 上寄せ（デフォルト） */
+  align-items: flex-start;
+  /* 下寄せ */
+  align-items: flex-end;
+  /* 中央寄せ */
+  align-items: center;
+}
+
+/* 配置の方向指定 */
+.flexbox3 {
+  display: flex;
+  /* 通常方向デフォルト */
+  flex-direction: row;
+  /* 通常と逆方向 */
+  flex-direction: row-reverse;
+  /* 下に向かって配置 */
+  flex-direction: column;
+  /* 下から上に向かって配置 */
+  flex-direction: column-reverse;
+}
+
+/* 個別に順序を変更 */
+.flexbox4 {
+  display: flex;
+  /* デフォより右・上へ */
+  order: 1;
+  /* デフォルト */
+  order: 0;
+  /* デフォより左・下へ */
+  order: -1;
+}
+
+/* 個別のアイテムに指定 */
+.flexbox5 {
+  display: flex;
+  /* デフォルト */
+  align-self: flex-start;
+  /* 下へ */
+  align-self: flex-end;
+}
+
+/* boxを折返すように設定
+※flex-boxはデフォルトでは折り返さない */
+.flexbox5 {
+  display: flex;
+  /* 他の行へ折返しを設定 */
+  flex-wrap: wrap;
+  /* デフォルト */
+  flex-wrap: nowrap;
+}
+
+/* ショートハンド */
+.flexbox6 {
+  display: flex;
+  /* 方向と折り返し改行を一緒に設定 */
+  flex-flow: column wrap;
+}
+
+/* 複数行（垂直方向）の行間を調整 */
+.flexbox7 {
+  display: flex;
+  flex-wrap: wrap;
+  /* 複数行を上寄せ */
+  align-content: flex-start;
+  /* 複数行を下寄せ */
+  align-content: flex-end;
+  /* 複数行を中央寄せ */
+  align-content: center;
+}
